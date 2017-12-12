@@ -6,12 +6,12 @@ public class Board {
 	/**
 	 * the board height and width is 3.
 	 */
-	private int dimention = 3;
+	public int dimention = 3;
 	
 	/**
 	 * player array that is the board.
 	 */
-	private static Player[][] playerboard;
+	public Player[][] playerboard;
 	
 	/**
 	 * constructor for tictac.
@@ -19,10 +19,6 @@ public class Board {
 	public Board()	{
 		
 		playerboard = new Player[dimention][dimention];
-	}
-	
-	public void gameStart(Player player1, Player player2)	{
-		
 	}
 	
 	public boolean setBoardAt(final Player player, final int setX, final int setY)	{
@@ -66,6 +62,8 @@ public class Board {
 		}
 		return null;
 	}
+	
+	
 	public boolean tie(final Player[][] board)	{
 		if(winner(board) == null)	{
 			for (int i = 0; i < dimention; i++) {
@@ -78,5 +76,37 @@ public class Board {
 
 		}
 		return true;
+	}
+	
+	public String[][] print(final Board board)	{
+		
+		String[][] printboard = new String[6][6];
+		for (int i = 0; i < dimention * 2; i++)	{
+			for (int j = 0; j < dimention * 2; j++) {
+				if (j % 2 == 1) {
+					printboard[i][j] = "|";
+					
+				} else {
+					
+					if (i % 2 == 1) {
+						printboard[i][j] = "------------------";
+						i++;
+						
+					} else {
+						
+						if (board.playerboard[i][j] == null) {
+							printboard[i][j] = "   ";
+						}
+						if (board.playerboard[i][j].x = true)	{
+							printboard[i][j] = " X ";							
+						}
+						if (board.playerboard[i][j].o = true)	{
+							printboard[i][j] = " O ";
+						}
+					}
+				}
+			}
+		}
+		return printboard;
 	}
 }
