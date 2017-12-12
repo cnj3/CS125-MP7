@@ -14,6 +14,16 @@ public class Player {
  * name of the player.
  */
     private String name;
+    
+    /**
+     * if player is x, first player.
+     */
+    public boolean x;
+    
+    /**
+     * if player is o, second player.
+     */
+    public boolean o;
 
     /**
      * Get the player's name.
