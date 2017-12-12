@@ -42,8 +42,8 @@
       <file leaf-file-name="tictactoeactual.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tictactoeactual.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="219">
+              <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -65,11 +65,19 @@
       <find>marker</find>
       <find>player_choice</find>
       <find>Board</find>
+      <find>game_on</find>
+      <find>win_check</find>
+      <find>userInput</find>
+      <find>playerChoice</find>
+      <find>checkmainBoard</find>
     </findStrings>
     <replaceStrings>
       <replace>point</replace>
       <replace>playerChoice</replace>
       <replace>mainBoard</replace>
+      <replace>checkWin</replace>
+      <replace>playerchoice</replace>
+      <replace>checkmainboard</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -309,8 +317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tictactoeactual.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="219">
+          <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
